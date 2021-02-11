@@ -29,7 +29,7 @@ docker-compose stop
 Dentro de la carpeta `airflow/` ejecutamos:
 
 ```
-docker build -y myAirflow .
+docker build -t myAirflow .
 ```
 
 Una vez terminado instanciamos el container a partir de la imagen:
@@ -45,7 +45,7 @@ Por ultimo vamos al navegador e ingresamos en `http://localhost:8080`.
 Dentro de la carpeta `api/` ejecutamos:
 
 ```
-docker build -y myAPI .
+docker build -t myAPI .
 ```
 
 Una vez terminado instanciamos el container a partir de la imagen:
