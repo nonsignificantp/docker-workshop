@@ -1,0 +1,27 @@
+version: "3"
+services: 
+  
+  jupyter:
+    image: jupyter/datascience-notebook
+    ports: 
+      - 8888:8888
+    volumes: 
+      - ./:/home/jovyan/work
+
+  postgres:
+    image: postgres
+    volumes: 
+      - ./data/postgres:/var/lib/postgresql/data
+    environment: 
+      POSTGRES_PASSWORD: 123
+
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - 80:80
+    environment: 
+      PGADMIN_DEFAULT_EMAIL: fake@mail.com
+      PGADMIN_DEFAULT_PASSWORD: 123
+    
+    
+
