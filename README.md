@@ -51,7 +51,7 @@ docker build -t myAPI .
 Una vez terminado instanciamos el container a partir de la imagen:
 
 ```
-docker run -p 80:80 myAPI0
+docker run -p 80:80 myAPI
 ```
 
 Por ultimo vamos al navegador e ingresamos en `http://localhost:80`.
